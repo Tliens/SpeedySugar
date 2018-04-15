@@ -33,6 +33,7 @@ typedef int (^defFirstBlock)(int a,int b);
     [self doSomething2:^int(int a, int b) {
         return  a+b;
     }];
+    NSLog(@"-------");
 }
 -(void)doSomething:(defFirstBlock) funcFristBlock{
     NSLog(@"file:%s line:%d,%d",__FILE__,__LINE__,funcFristBlock(3,5));
